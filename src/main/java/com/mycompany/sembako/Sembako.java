@@ -3,9 +3,9 @@ package com.mycompany.sembako;
 public class Sembako {
 
     public static void main(String[] args) {
-        System.out.println("==============================");
-        System.out.println("   MANAJEMEN TOKO SEMBAKO ");
-        System.out.println("==============================");
+        System.out.println("========================================");
+        System.out.println("    MANAJEMEN TOKO SEMBAKO CHESAK    ");
+        System.out.println("========================================");
         
         Toko tokoSaya = new Toko(
                 "Toko Adipura",
@@ -29,7 +29,7 @@ public class Sembako {
                 14000
         ); 
         
-        System.out.println("===== DATA BARANG ====");
+        System.out.println("===== DATA BARANG YANG DI CHECK OUT ====");
         
         barang1.tampilkanInfo();
         System.out.println();
