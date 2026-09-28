@@ -23,10 +23,11 @@ public class Sembako {
                 17000
         );
         
-        Barang barang2 = new Barang(
-                "Tepung",
+        BarangKadaluarsa barang2 = new BarangKadaluarsa(
+                "Tepung Terigu",
                 50,
-                14000
+                14000,
+                "25-12-2026"
         ); 
         
         System.out.println("===== DATA BARANG YANG DI CHECK OUT ====");
