@@ -1,7 +1,7 @@
 
 package com.mycompany.sembako;
 
-public class Barang {
+public abstract class Barang {
     private String namaBarang;
     private int stok;
     private int harga;
@@ -35,10 +35,7 @@ public class Barang {
     public void setharga(int harga){
         this.harga = harga;
     }
-    public void tampilkanInfo(){
-        System.out.println(" Nama Barang  : " + namaBarang);
-        System.out.println(" Stok         : " + stok);
-        System.out.println(" Harga        : " + harga);
-        
-    }
+
+    // Abstract method yang wajib diimplementasikan oleh setiap subclass
+    public abstract void tampilkanInfo();
 }

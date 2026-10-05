@@ -14,27 +14,19 @@ public class Sembako {
         );
         
         tokoSaya.tampilkanInfo();
-        
         System.out.println();
         
-        Barang barang1 = new Barang(
-                "Beras",
-                50,
-                17000
-        );
-        
-        BarangKadaluarsa barang2 = new BarangKadaluarsa(
-                "Tepung Terigu",
-                50,
-                14000,
-                "25-12-2026"
-        ); 
+        // Penerapan Polimorfisme: Array bertipe 'Barang' menampung berbagai objek turunan
+        Barang[] daftarBarang = new Barang[2];
+        daftarBarang[0] = new NonKadaluarsa("Beras", 50, 17000);
+        daftarBarang[1] = new BarangKadaluarsa("Tepung Terigu", 50, 14000, "25-12-2026");
         
         System.out.println("===== DATA BARANG YANG DI CHECK OUT ====");
         
-        barang1.tampilkanInfo();
-        System.out.println();
-        
-        barang2.tampilkanInfo();
+        // Pemanggilan method tampilkanInfo() akan menyesuaikan bentuk objek aslinya
+        for (Barang b : daftarBarang) {
+            b.tampilkanInfo();
+            System.out.println("----------------------------------------");
+        }
     }
 }

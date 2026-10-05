@@ -8,7 +8,6 @@ public class BarangKadaluarsa extends Barang {
     private String tanggalKadaluarsa;
 
     public BarangKadaluarsa(String namaBarang, int stok, int harga, String tanggalKadaluarsa) {
-        
         super(namaBarang, stok, harga);
         this.tanggalKadaluarsa = tanggalKadaluarsa;
     }
@@ -23,7 +22,9 @@ public class BarangKadaluarsa extends Barang {
 
     @Override
     public void tampilkanInfo() {
-        super.tampilkanInfo();
+        System.out.println(" Nama Barang  : " + getnamaBarang());
+        System.out.println(" Stok         : " + getstok());
+        System.out.println(" Harga        : " + getharga());
         System.out.println(" Expired Date : " + tanggalKadaluarsa);
     }
 }
